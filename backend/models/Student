@@ -1,0 +1,20 @@
+const mongoose = require("mongoose");
+const studentSchema = new mongoose.Schema({
+    rno:{
+        type:Number,
+        required:true,
+        unique:true,
+    },
+    stu_name:
+    {
+        type:String,
+        required:true,
+    },
+    contact:
+    {
+        type:Number,
+        required:true,
+    },    
+});
+const Student=mongoose.model("studentabhinav",studentSchema);
+module.exports = Student;
